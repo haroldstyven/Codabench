@@ -1,0 +1,46 @@
+version: 2
+title: "Software de Vigilancia Tecnologica Cotecmar"
+description: "Reto de clasificacion y robustez 2026"
+image: logo.png
+terms: html/terms.html
+
+pages:
+  - title: overview
+    file: html/overview.html
+  - title: evaluation
+    file: html/evaluation.html
+  - title: data
+    file: html/data.html
+
+tasks:
+  - index: 0
+    name: "Tarea de Clasificacion"
+    description: "Evaluacion de modelos de machine learning"
+    scoring_program: scoring_program.zip
+    ingestion_program: ingestion_program.zip
+    reference_data: reference_data.zip
+    input_data: public_data.zip
+
+phases:
+  - index: 0
+    name: "Fase de Desarrollo"
+    description: "Fase inicial de envios"
+    start: 2026-03-20
+    end: 2027-03-20
+    tasks:
+      - 0
+    max_submissions: 50
+    execution_time_limit: 500
+
+leaderboards:
+  - title: Results
+    key: main
+    columns:
+      - title: accuracy
+        key: accuracy
+        index: 0
+        sorting: desc
+      - title: f1_score
+        key: f1_score
+        index: 1
+        sorting: desc
