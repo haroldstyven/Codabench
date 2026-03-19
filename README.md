@@ -1,10 +1,28 @@
-# Instrucciones para empaquetar el reto
+# NALEF Food Safety - Codabench Challenge
 
-1. Comprime el contenido de `ingestion_program/` en un archivo llamado `ingestion_program.zip`.
-2. Comprime el contenido de `scoring_program/` en un archivo llamado `scoring_program.zip`.
-3. Comprime `public_data/` en `public_data.zip`.
-4. Comprime `reference_data/` en `reference_data.zip`.
-5. Asegúrate de que los 4 archivos .zip resultantes estén en la raíz junto a `competition.yaml` y la carpeta `html/`.
-6. Selecciona: `competition.yaml`, `html/`, y los 4 archivos `.zip`. 
-7. Comprímelos todos en un archivo final llamado `bundle_reto.zip`.
-8. Sube `bundle_reto.zip` a Codabench.
+This repository contains the source code and configuration for the NALEF Food Safety challenge on Codabench.
+
+## Objective
+Predict crop growth stages using computer vision to enhance food safety and agricultural sustainability.
+
+## Project Structure
+- `html/`: Markdown pages for the Codabench challenge description.
+- `img/`: Images used in the challenge description.
+- `ingestion_program/`: Contains the script that feeds data to the models.
+- `scoring_program/`: Contains the script that evaluates the predictions.
+- `public_data/` & `reference_data/`: Sample datasets for testing.
+- `competition.yaml`: Codabench configuration file.
+- `create_bundle.py`: Automation script to generate the final challenge bundle.
+
+## How to generate the bundle
+
+You no longer need to manually compress the folders. Simply run the Python script provided:
+
+```bash
+python create_bundle.py
+```
+
+This script will automatically create the necessary `.zip` files (`ingestion_program.zip`, `scoring_program.zip`, `public_data.zip`, `reference_data.zip`) and package everything into a final `bundle_reto.zip` ready to be uploaded to Codabench.
+
+## Uploading to Codabench
+Once generated, upload `bundle_reto.zip` directly to the Codabench platform.

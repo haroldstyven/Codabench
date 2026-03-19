@@ -1,32 +1,37 @@
 version: 2
-title: "Software de Vigilancia Tecnologica Cotecmar"
-description: "Reto de clasificacion y robustez 2026"
+title: "NALEF Food Safety"
+description: "Predict crop growth stages using computer vision to enhance food safety and agricultural sustainability."
 image: logo.png
-terms: html/terms.html
+terms: html/terms.md
 
 pages:
-  - title: overview
-    file: html/overview.html
-  - title: evaluation
-    file: html/evaluation.html
-  - title: data
-    file: html/data.html
+  - title: Overview
+    file: html/overview.md
+  - title: Evaluation
+    file: html/evaluation.md
+  - title: Schedule
+    file: html/schedule.md
+  - title: Dataset
+    file: html/data.md
+  - title: Organization Committee
+    file: html/organization.md
+  - title: Terms
+    file: html/terms.md
 
 tasks:
   - index: 0
-    name: "Tarea de Clasificacion"
-    description: "Evaluacion de modelos de machine learning"
+    name: "Phenological Stage Classification"
+    description: "Predict the growth stage of cucumber crops from field images."
     scoring_program: scoring_program.zip
     ingestion_program: ingestion_program.zip
     reference_data: reference_data.zip
-    input_data: public_data.zip
 
 phases:
   - index: 0
-    name: "Fase de Desarrollo"
-    description: "Fase inicial de envios"
-    start: 2026-03-20
-    end: 2027-03-20
+    name: "Development Phase"
+    description: "Initial submissions phase"
+    start: 2026-04-05
+    end: 2026-04-30
     tasks:
       - 0
     max_submissions: 50
@@ -36,11 +41,11 @@ leaderboards:
   - title: Results
     key: main
     columns:
-      - title: accuracy
-        key: accuracy
+      - title: Macro-F1
+        key: macro_f1
         index: 0
         sorting: desc
-      - title: f1_score
-        key: f1_score
+      - title: Balanced Accuracy
+        key: balanced_accuracy
         index: 1
         sorting: desc

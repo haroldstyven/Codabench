@@ -1,1 +1,15 @@
-Task 1
+Task1/
+
+# Generated zip bundles
+*.zip
+
+# Python ignores
+__pycache__/
+venv/
+env/
+.env
+.pytest_cache/
+
+# OS/System files
+.DS_Store
+Thumbs.db
