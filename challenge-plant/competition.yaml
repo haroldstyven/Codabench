@@ -28,15 +28,15 @@ tasks:
   name: Phenological Stage Classification
   description: 'Classify cucumber crop images into 5 phenological stages.'
   is_public: false
-  reference_data: reference_data
-  scoring_program: scoring_program
+  reference_data: reference_data.zip
+  scoring_program: scoring_program.zip
 
 # Single phase challenge
 phases:
 - index: 0
   name: Challenge
-  description: 'Train your model with the training data and submit your predictions on the validation set. You can make 5 submissions per day and 100 submissions in total.'
-  start: 3-18-2026
+  description: 'Participants submit their predictions. The leaderboard is public and updated in real time. 5 submissions per day and 100 submissions in total.'
+  start: 4-5-2026
   end: 4-30-2026
   max_submissions_per_day: 5
   max_submissions: 100
