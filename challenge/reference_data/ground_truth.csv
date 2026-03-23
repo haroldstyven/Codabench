@@ -1,0 +1,14 @@
+sequence_id,token_index,tag
+menu_000001,0,B-DISH
+menu_000001,1,I-DISH
+menu_000001,2,O
+menu_000001,3,B-INGREDIENT
+menu_000001,4,I-INGREDIENT
+menu_000001,5,O
+menu_000001,6,B-BRAND
+recipe_000001,0,O
+recipe_000001,1,B-BEVERAGE
+recipe_000001,2,I-BEVERAGE
+recipe_000001,3,O
+recipe_000002,0,B-INGREDIENT
+recipe_000002,1,O

@@ -1,0 +1,59 @@
+# NALEF Food Safety Challenge
+# Learn more here: https://docs.codabench.org/latest/Organizers/Benchmark_Creation/Yaml-Structure/
+title: NALEF Food Safety
+version: 2
+description: "Welcome! Food safety and agricultural sustainability benefit from timely management practices. NALEF Food Safety proposes a computer vision task: predict cucumber crop growth stages from field images."
+image: logo.png
+registration_auto_approve: True
+docker_image: codalab/codalab-legacy:py312
+enable_detailed_results: True
+make_programs_available: false
+make_input_data_available: false
+
+# Documentation web pages
+terms: pages/terms.md
+pages:
+  - title: Overview
+    file: pages/overview.md
+  - title: Data
+    file: pages/data.md
+  - title: Evaluation
+    file: pages/evaluation.md
+  - title: Organization
+    file: pages/organization.md
+
+# Definition of the tasks (result submission - no ingestion program needed)
+tasks:
+- index: 0
+  name: Phenological Stage Classification
+  description: 'Classify cucumber crop images into 5 phenological stages.'
+  is_public: false
+  reference_data: reference_data
+  scoring_program: scoring_program
+
+# Single phase challenge
+phases:
+- index: 0
+  name: Challenge
+  description: 'Train your model with the training data and submit your predictions on the validation set. You can make 5 submissions per day and 100 submissions in total.'
+  start: 3-18-2026
+  end: 4-30-2026
+  max_submissions_per_day: 5
+  max_submissions: 100
+  execution_time_limit: 300
+  tasks:
+  - 0
+  solutions: []
+
+
+# Leaderboard
+leaderboards:
+- index: 0
+  title: Results
+  key: Results
+  submission_rule: "Force_Last"
+  columns:
+      - title: Macro F1
+        key: macro_f1
+        index: 0
+        sorting: desc

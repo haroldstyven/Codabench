@@ -9,9 +9,13 @@ def zip_directory(folder_path, zip_name):
                 zipf.write(os.path.join(root, file), rel_path.replace('\\', '/'))
     print(f"Created: {zip_name}")
 
-def create_competition_bundle():
+def create_competition_bundle(source_dir, output_zip, html_folder):
+    """Generates a zip bundle for a Codabench challenge."""
     sub_zips = ['ingestion_program', 'scoring_program', 'public_data', 'reference_data']
-    final_bundle_name = 'bundle_reto.zip'
+    
+    original_dir = os.getcwd()
+    if source_dir != ".":
+        os.chdir(source_dir)
     
     # 1. Crear los zips internos
     for folder in sub_zips:
@@ -19,15 +23,16 @@ def create_competition_bundle():
             zip_directory(folder, f"{folder}.zip")
 
     # 2. Crear el bundle raíz
-    print(f"\nGenerating {final_bundle_name}...")
-    with zipfile.ZipFile(final_bundle_name, 'w', zipfile.ZIP_DEFLATED) as bundle:
+    print(f"\nGenerating {output_zip}...")
+    output_path = os.path.join(original_dir, output_zip) if source_dir != "." else output_zip
+    with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as bundle:
         # Archivos raíz
         for f in ['competition.yaml', 'logo.png']:
             if os.path.exists(f):
                 bundle.write(f)
         
-        # Carpetas html e img
-        for folder in ['html', 'img']:
+        # Carpetas de páginas e imágenes
+        for folder in [html_folder, 'img']:
             if os.path.exists(folder):
                 for root, dirs, files in os.walk(folder):
                     for file in files:
@@ -40,8 +45,15 @@ def create_competition_bundle():
             z = f"{folder}.zip"
             if os.path.exists(z):
                 bundle.write(z)
+                os.remove(z) # Cleanup internal zip
 
-    print(f"\nAll set! Upload the file '{final_bundle_name}'")
+    if source_dir != ".":
+        os.chdir(original_dir)
+    print(f"All set! Bundle created at '{output_zip}'\n")
 
 if __name__ == "__main__":
-    create_competition_bundle()
+    print("=== Constructing Task 1: NALEF Food Safety ===")
+    create_competition_bundle(".", "bundle_reto.zip", "html")
+    
+    print("=== Constructing Task 2: GastroCorp NER 2026 ===")
+    create_competition_bundle("challenge", "challenge.zip", "pages")
