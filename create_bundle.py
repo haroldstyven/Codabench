@@ -53,7 +53,7 @@ def create_competition_bundle(source_dir, output_zip, html_folder):
 
 if __name__ == "__main__":
     print("=== Constructing Task 1: NALEF Food Safety ===")
-    create_competition_bundle(".", "bundle_reto.zip", "html")
+    create_competition_bundle("challenge-plant", "challenge-plant.zip", "pages")
     
     print("=== Constructing Task 2: GastroCorp NER 2026 ===")
-    create_competition_bundle("challenge", "challenge.zip", "pages")
+    create_competition_bundle("challenge_gastro", "challenge_gastro.zip", "pages")
