@@ -10,7 +10,7 @@
 
 ## Data Usage
 
-- Dataset available on [Zenodo](https://doi.org/10.5281/zenodo.19073937) under **CC BY 4.0**.
+- Dataset available on [Zenodo](https://doi.org/10.5281/zenodo.19192941) under **CC BY 4.0**.
 - Use only for this challenge.
 - Manual labeling of validation images is prohibited.
 - External data and pretrained models are allowed.
@@ -41,8 +41,8 @@ If you use this dataset, please cite:
   title        = {{NALEF Food Safety 2026 Dataset}},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.19073937},
-  url          = {https://doi.org/10.5281/zenodo.19073937}
+  doi          = {10.5281/zenodo.19192941},
+  url          = {https://doi.org/10.5281/zenodo.19192941}
 }
 ```
 

@@ -8,7 +8,7 @@ This challenge uses a real-world dataset of cucumber crop images captured under 
 
 The complete dataset is publicly available on **Zenodo**, a trusted open-access repository for research data. You can download the images using the following link:
 
-**[https://doi.org/10.5281/zenodo.19073937](https://doi.org/10.5281/zenodo.19073937)**
+**[https://zenodo.org/records/19192941](https://zenodo.org/records/19192941)**
 
 The dataset is released under a **Creative Commons Attribution 4.0 International (CC BY 4.0)** license, allowing you to use, share, and adapt the data with proper attribution.
 
@@ -65,7 +65,7 @@ val_images/
 ├── img_000001.jpg
 ├── img_000002.jpg
 ├── img_000003.jpg
-└── ... (97 images total)
+└── ... (239 images total)
 ```
 
 ---

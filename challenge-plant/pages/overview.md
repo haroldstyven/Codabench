@@ -68,7 +68,7 @@ Classify each cucumber crop image into one of the following **five phenological 
 
 ## Quick Start
 
-1. **Download** the dataset from [Zenodo](https://doi.org/10.5281/zenodo.19073937)
+1. **Download** the dataset from [Zenodo](https://zenodo.org/records/19192941)
 2. **Train** your model using `train_images/`
 3. **Predict** labels for all images in `val_images/`
 4. **Submit** your predictions following the format below
