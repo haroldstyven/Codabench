@@ -73,4 +73,5 @@ Wróblewska, A., Kaliska, A., Pawłowski, M., Wisniewski, D., Sosnowski, W., & �
 
 ## Contact
 
-Questions? Reach us through Codabench.
+Questions? Reach us through Emails and Discord.
+Discord Server: https://discord.gg/XQEUWVqU

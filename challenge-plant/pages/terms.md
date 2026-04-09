@@ -50,4 +50,5 @@ If you use this dataset, please cite:
 
 ## Contact
 
-Questions? Reach us through Codabench.
+Questions? Reach us through Emails and Discord.
+Discord Server: https://discord.gg/XQEUWVqU
