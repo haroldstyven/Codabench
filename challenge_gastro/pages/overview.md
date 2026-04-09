@@ -202,6 +202,29 @@ zip submission.zip submission.csv
 
 ---
 
+## Paper Submission
+
+Participants can submit a paper describing their system, resources, results, and analysis. Accepted papers will be included in the official NALEF proceedings.
+
+- Use CEURART format: [Overleaf Template](https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw)
+- Length: 5–8 pages
+- Language: English
+
+- Include copyright footnote:
+
+```
+Copyright © 2026 for this paper by its authors.
+Use permitted under CC BY 4.0.
+NALEF 2026, Cartagena, Colombia.
+```
+
+- No page numbers or headers allowed
+- Full author names and affiliations required
+
+- CEUR agreement: [Download PDF](https://ceur-ws.org/ceur-author-agreement-ccby-ntp.pdf?ver=2025-06-10)
+
+---
+
 ## References
 
 Peña Gnecco, D., Puertas, E., & Martinez-Santos, J. C. (2026). GastroCorp: A Bilingual Gastronomic NER Corpus (Spanish–English) [https://doi.org/10.5281/zenodo.19183413](https://doi.org/10.5281/zenodo.19183413)
