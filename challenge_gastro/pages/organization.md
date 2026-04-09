@@ -46,4 +46,4 @@ Cartagena, Colombia
 
 ## Contact
 
-For questions or technical issues, contact us through Codabench.
+For questions or technical issues, contact us through via [Email](mailto:verbanexai@utb.edu.co) or [Discord](https://discord.gg/ZHW3jGSdpS)..
